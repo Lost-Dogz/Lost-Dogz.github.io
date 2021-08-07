@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Bitcoin is for every.one</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='./style.css' rel='stylesheet' />
+</head>
+<body>
+<div id="map"></div>
+<div id="story"></div>
+<div id="share">
+  <a href="https://twitter.com/intent/tweet?text=Bitcoin%20is%20for%20everyone&hashtags=bitcoinisforeveryone&url=https%3A%2F%2Fbitcoinisforevery.one" target="_blank" class="fa fa-twitter"></a><br>
+  <a href="https://www.facebook.com/share.php?u=bitcoinisforevery.one" target="_blank" class="fa fa-facebook"></a><br>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=bitcoinisforevery.one" class="fa fa-linkedin"></a><br>
+  <a href="#" class="fa fa-instagram"></a><br>
+  <a href="#" class="fa fa-reddit"></a><br>
+  <a href="#" class="fa fa-github"></a>
+</div>
+<div class="header">
+  <a href="#">
+    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM15.8733 10.616C16.0794 9.31434 15.1803 8.63595 13.9322 8.17805L14.3709 6.40752L13.3814 6.16228L12.954 7.88758C12.8892 7.87111 12.8249 7.85447 12.7608 7.8379L12.7607 7.83788L12.7607 7.83787C12.5653 7.78734 12.3721 7.73737 12.1744 7.69437L12.6018 5.96907L11.5848 5.71702L11.1574 7.44232L9.13867 6.942L8.84704 8.12229C8.84704 8.12229 9.59555 8.28506 9.56828 8.30104C9.96893 8.40904 10.0369 8.69284 10.0149 8.90977L9.50633 10.9167L8.80751 13.7404C8.75259 13.8745 8.61852 14.066 8.34431 13.9993C8.35578 14.0121 7.61647 13.8088 7.61647 13.8088L7.12968 15.0542L9.08838 15.5876L8.652 17.349L9.63527 17.5927L10.0716 15.8313C10.2299 15.8767 10.3899 15.914 10.5447 15.95L10.5447 15.95C10.6606 15.977 10.7736 16.0033 10.8807 16.0318L10.4444 17.7932L11.4294 18.0373L11.8658 16.276C13.5611 16.5994 14.8411 16.448 15.4129 14.7791C15.8726 13.4485 15.4427 12.6898 14.5497 12.19C15.2208 12.0266 15.7174 11.5635 15.8733 10.616ZM11.283 10.9666L11.2337 10.9518L11.7615 8.83476C11.8179 8.84934 11.8899 8.86549 11.9733 8.88418L11.9733 8.88418C12.6792 9.04244 14.1984 9.38303 13.9233 10.4981C13.6279 11.6712 11.8744 11.1443 11.283 10.9666ZM10.3698 14.4046L10.4555 14.43C11.1841 14.6467 13.2516 15.2615 13.532 14.0972C13.8209 12.9759 11.9622 12.5393 11.1301 12.3437C11.0389 12.3223 10.96 12.3038 10.8977 12.2876L10.3698 14.4046Z" fill="#F7931A"/>
+    </svg>
+  </a>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li>Africa
+      <ul>
+        <li><a href="#eth">Ethiopia</a></li>
+        <li><a href="#nga">Nigeria</a></li>
+        <li><a href="#sen">Senegal</a></li>
+        <li><a href="#zwe">Zimbabwe</a></li>
+      </ul>
+    </li>
+    <li>Asia
+      <ul>
+      </ul>
+    </li>
+    <li>Europe
+      <ul>
+        <li><a href="#blr">Belarus</a></li>
+        <li><a href="#gbr">United Kingdom</a></li>
+      </ul>
+    </li>
+    <li>Latin America
+      <ul>
+        <li><a href="#slv">El Salvador</a></li>
+      </ul>
+    </li>
+    <li>North America
+      <ul>
+        <li><a href="#can">Canada</a></li>
+        <li><a href="#usa">United States</a></li>
+      </ul>
+    </li>
+    <li>Oceania
+      <ul>
+        <li><a href="#ton">Tonga</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<span class="arrow pulse">
+<span class="arrow pulse">
+</span>
+</span>
+<script src="./config.js"></script>
+<script>
+var layerTypes = {
+    'fill': ['fill-opacity'],
+    'line': ['line-opacity'],
+    'circle': ['circle-opacity', 'circle-stroke-opacity'],
+    'symbol': ['icon-opacity', 'text-opacity'],
+    'raster': ['raster-opacity'],
+    'fill-extrusion': ['fill-extrusion-opacity'],
+    'heatmap': ['heatmap-opacity']
+}
+
+var alignments = {
+    'left': 'lefty',
+    'center': 'centered',
+    'right': 'righty',
+    'full': 'fully'
+}
+
+function getLayerPaintType(layer) {
+    var layerType = map.getLayer(layer).type;
+    return layerTypes[layerType];
+}
+
+function setLayerOpacity(layer) {
+    var paintProps = getLayerPaintType(layer.layer);
+    paintProps.forEach(function(prop) {
+        var options = {};
+        if (layer.duration) {
+            var transitionProp = prop + "-transition";
+            options = { "duration": layer.duration };
+            map.setPaintProperty(layer.layer, transitionProp, options);
+        }
+        map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+    });
+}
+
+var story = document.getElementById('story');
+var features = document.createElement('div');
+features.setAttribute('id', 'features');
+
+var header = document.createElement('div');
+
+if (config.title) {
+    var titleText = document.createElement('h1');
+    titleText.innerText = config.title;
+    header.appendChild(titleText);
+}
+
+if (config.subtitle) {
+    var subtitleText = document.createElement('h2');
+    subtitleText.innerText = config.subtitle;
+    header.appendChild(subtitleText);
+}
+
+if (config.byline) {
+    var bylineText = document.createElement('p');
+    bylineText.innerText = config.byline;
+    header.appendChild(bylineText);
+}
+
+if (header.innerText.length > 0) {
+    header.classList.add(config.theme);
+    header.setAttribute('id', 'header');
+    story.appendChild(header);
+}
+
+config.chapters.forEach((record, idx) => {
+    var container = document.createElement('div');
+    var chapter = document.createElement('div');
+
+    if (record.title) {
+        var title = document.createElement('h3');
+        title.innerText = record.title;
+        chapter.appendChild(title);
+    }
+
+    if (record.intro) {
+        var intro = document.createElement('p');
+        intro.innerHTML = record.intro;
+        chapter.appendChild(intro);
+    }
+
+    if (record.image) {
+        var image = new Image();
+        image.src = record.image;
+        chapter.appendChild(image);
+    }
+
+    if (record.caption) {
+        var figcaption = document.createElement('figcaption');
+        figcaption.innerHTML = record.caption;
+        chapter.appendChild(figcaption);
+    }
+
+    if (record.story) {
+        var story = document.createElement('p');
+        story.innerHTML = record.story;
+        chapter.appendChild(story);
+    }
+
+    if (record.url) {
+        var url = document.createElement('a');
+        url.innerHTML = record.url;
+        chapter.appendChild(url);
+    }
+
+    container.setAttribute('id', record.id);
+    container.classList.add('step');
+    if (idx === 0) {
+        container.classList.add('active');
+    }
+
+    chapter.classList.add(config.theme);
+    container.appendChild(chapter);
+    container.classList.add(alignments[record.alignment] || 'centered');
+    if (record.hidden) {
+        container.classList.add('hidden');
+    }
+    features.appendChild(container);
+});
+
+story.appendChild(features);
+
+var footer = document.createElement('div');
+
+if (config.footer) {
+    var footerText = document.createElement('p');
+    footerText.innerHTML = config.footer;
+    footer.appendChild(footerText);
+}
+
+if (footer.innerText.length > 0) {
+    footer.classList.add(config.theme);
+    footer.setAttribute('id', 'footer');
+    story.appendChild(footer);
+}
+
+mapboxgl.accessToken = config.accessToken;
+
+const transformRequest = (url) => {
+    const hasQuery = url.indexOf("?") !== -1;
+    const suffix = hasQuery ? "&pluginName=scrollytellingV2" : "?pluginName=scrollytellingV2";
+    return {
+      url: url + suffix
+    }
+}
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: config.style,
+    center: config.chapters[0].location.center,
+    zoom: config.chapters[0].location.zoom,
+    bearing: config.chapters[0].location.bearing,
+    pitch: config.chapters[0].location.pitch,
+    interactive: false,
+    transformRequest: transformRequest
+});
+
+if (config.showMarkers) {
+    var marker = new mapboxgl.Marker({ color: config.markerColor });
+    marker.setLngLat(config.chapters[0].location.center).addTo(map);
+}
+
+// instantiate the scrollama
+var scroller = scrollama();
+
+map.on("load", function() {
+    if (config.use3dTerrain) {
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
+        });
+        // add the DEM source as a terrain layer with exaggerated height
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+        // add a sky layer that will show when the map is highly pitched
+        map.addLayer({
+            'id': 'sky',
+            'type': 'sky',
+            'paint': {
+                'sky-type': 'atmosphere',
+                'sky-atmosphere-sun': [0.0, 0.0],
+                'sky-atmosphere-sun-intensity': 15
+            }
+        });
+    };
+
+    // setup the instance, pass callback functions
+    scroller
+    .setup({
+        step: '.step',
+        offset: 0.5,
+        progress: true
+    })
+    .onStepEnter(response => {
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
+        response.element.classList.add('active');
+        map[chapter.mapAnimation || 'flyTo'](chapter.location);
+        if (config.showMarkers) {
+            marker.setLngLat(chapter.location.center);
+        }
+        if (chapter.onChapterEnter.length > 0) {
+            chapter.onChapterEnter.forEach(setLayerOpacity);
+        }
+        if (chapter.callback) {
+            window[chapter.callback]();
+        }
+        if (chapter.rotateAnimation) {
+            map.once('moveend', function() {
+                const rotateNumber = map.getBearing();
+                map.rotateTo(rotateNumber + 90, {
+                    duration: 24000, easing: function (t) {
+                        return t;
+                    }
+                });
+            });
+        }
+    })
+    .onStepExit(response => {
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
+        response.element.classList.remove('active');
+        if (chapter.onChapterExit.length > 0) {
+            chapter.onChapterExit.forEach(setLayerOpacity);
+        }
+    });
+});
+
+// setup resize event
+window.addEventListener('resize', scroller.resize);
+
+</script>
+</body>
+</html>
