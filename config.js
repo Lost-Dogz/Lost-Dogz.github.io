@@ -149,8 +149,7 @@ var config = {
               center: [-89.18540, 13.70270],
               zoom: 7.87,
               pitch: 0.00,
-              bearing: 0.00,
-              speed: 0.5
+              bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
@@ -166,11 +165,12 @@ var config = {
             intro: 'The project Bitcoin Beach is creating a sustainable Bitcoin Economic ecosystem on the coast of El Salvador, where the majority of people do not have access to bank accounts and the local businesses could never qualify for merchant accounts needed to accept credit cards.',
             image: './images/bitcoinbeach.jpeg',
             caption: 'Photo by <a href="https://bitcoinbeach.com" target="_blank">Bitcoin Beach</a>',
-            story: 'One of the projects supported by the Bitcoin Beach initiative is "Casa Esperanza" or "Hope House", a community initiative in El Zonte with the aim to impact the teenagers and college age boys of the salvadoran surf community who don’t have either the opportunity or access to a good education, for example by providing English language and information technology classes.</p><p>The success of bitcoin in El Zonte served as inspiration for the El Salvadoran government to make bitcoin legal tender.',
+            story: 'One of the projects supported by the Bitcoin Beach initiative is "Casa Esperanza" or "Hope House", a community initiative in El Zonte with the aim to impact the teenagers and college age boys of the salvadoran surf community who don’t have either the opportunity or access to a good education, for example by providing English language and information technology classes.</p><p>The success of bitcoin in El Zonte served as inspiration for the El Salvadoran government to make bitcoin legal tender. The site Motherboard went to visit El Zonte in June and made the following short documentary:<br><iframe class="youtube" width="533" height="305" src="https://www.youtube.com/embed/aVVZXUFItZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            url: '<a href="https://www.bitcoinbeach.com/" target="_blank">Bitcoin Beach</a>',
             location: {
               center: [-89.44143, 13.49726],
               zoom: 16.27,
-              pitch: 65.00,
+              pitch: 75.00,
               bearing: -13.60
             },
             mapAnimation: 'flyTo',
@@ -244,18 +244,61 @@ var config = {
             id: 'eth1',
             alignment: 'left',
             hidden: false,
-            title: 'Ethiopia',
-            intro: 'Kal Kassa - cross border, inflation, pay freelancers',
+            title: 'Bitcoin education and cross-border payments to Ethiopia',
+            intro: 'Kal Kassa is an Ethiopian businessman, currently based in the US, who is spearheading the BitcoinBirr education initiative. He uses bitcoin to pay unbanked freelancers, graphic designers and translators in Addis Ababa.',
+            image: './images/eth1.jpg',
+            story: 'BitcoinBirr (Birr is Amharic for money) is an open source initative to educate and share bitcoin material with populations in all economies. 2021 priorities include translating copies of various books and relevant materials on bitcoin in local Ethiopian and Eritrean languages.',
+            url: '<a href="https://twitter.com/kalkassa" target="_blank" class="fa fa-twitter"></a><br><a href="https://bitcoinbirr.org/">BitcoinBirr</a>',
+            location: {
+              center: [38.75689, 8.98997],
+              zoom: 13.7,
+              pitch: 76.00,
+              bearing: -120.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'cod',
+            alignment: 'full',
+            hidden: false,
+            title: 'Democratic Republic of the Congo',
+            intro: '',
             image: '',
             story: '',
             location: {
-              center: [38.60601, 8.96020],
-              zoom: 12.91,
-              pitch: 50.50,
-              bearing: 39.33
+              center: [21.69898, -4.08654],
+              zoom: 5.14,
+              pitch: 0.00,
+              bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'cod1',
+            alignment: 'right',
+            hidden: false,
+            title: 'Supporting nature conservation, Virunga National Park, DRC',
+            intro: '',
+            image: './images/cod1.png',
+            caption: 'Matebe hydroelectric plant',
+            story: '',
+            url: '<a href="" target="_blank"></a>',
+            location: {
+              center: [29.24970, -1.52326],
+              zoom: 14.5,
+              pitch: 74.00,
+              bearing: -8.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
@@ -285,10 +328,10 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Victoria Kayak, Victoria, Canada',
-            intro: 'Victoria Kayak Tours & Rentals',
+            intro: 'A great way to see Victoria and the local marine wildlife from a unique vantage point is by renting a kayak at Victoria Kayak Tours & Rentals!',
             image: './images/victoria.png',
             caption: 'Photo by <a href="https://victoriakayak.com/" target="_blank">Victoria Kayak</a>',
-            story: '',
+            story: 'Victoria Kayak fell down the rabbit hole and is adopting a fixed bitcoin price for Tours & Rentals, representing a significant discount when compared to the CAD price. At Victoria Kayak they think bitcoin is the future and want to encourage people to learn about bitcoin and adopt it for use. This is their incentive and contribution to the Bitcoin network.',
             url: '<a href="https://victoriakayak.com/">Victoria Kayak</a>',
             location: {
               center: [-123.37050, 48.42454],
@@ -367,16 +410,57 @@ var config = {
             id: 'usa1',
             alignment: 'left',
             hidden: false,
-            title: '',
+            title: 'Greening the grid in Midland, Texas',
             intro: '',
             image: './images/usa1.jpg',
             story: '',
             url: '<a href="#" target="_blank"></a>',
             location: {
-              center: [-79.41871, 43.63310],
-              zoom: 15.8,
-              pitch: 65.00,
-              bearing: 105.42
+              center: [-102.06006, 31.98836],
+              zoom: 13,
+              pitch: 75.00,
+              bearing: 160.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'afg',
+            alignment: 'full',
+            hidden: false,
+            title: 'Afghanistan',
+            intro: '',
+            image: '',
+            story: '',
+            location: {
+              center: [66.01292, 33.93490],
+              zoom: 5.00,
+              pitch: 0.00,
+              bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'afg1',
+            alignment: 'left',
+            hidden: false,
+            title: 'A lifeline for refugees',
+            intro: '',
+            image: './images/afg1.jpg',
+            story: '',
+            url: '<a href="#" target="_blank"></a>',
+            location: {
+              center: [62.21654, 34.35070],
+              zoom: 15.28,
+              pitch: 77.00,
+              bearing: -32.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
