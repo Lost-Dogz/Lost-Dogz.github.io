@@ -300,3 +300,6 @@ blockquote.twitter-tweet a:focus {
   90% { opacity: 0.3; }
 }
 /*End scroll down hint css */
+.youtube {
+  margin-left: 0px;
+}
