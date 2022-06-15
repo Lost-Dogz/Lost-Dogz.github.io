@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8' />
-    <title>Bitcoin is for every.one</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
+    <title>Bitcoin is for every.one</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +19,15 @@
 <body>
 <div id="map"></div>
 <div id="story"></div>
+<div class="arrow">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 <div id="share">
   <a href="https://twitter.com/intent/tweet?text=Bitcoin%20is%20for%20everyone&hashtags=bitcoinisforeveryone&url=https%3A%2F%2Fbitcoinisforevery.one" target="_blank" class="fa fa-twitter"></a><br>
   <a href="https://www.facebook.com/share.php?u=bitcoinisforevery.one" target="_blank" class="fa fa-facebook"></a><br>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=bitcoinisforevery.one" class="fa fa-linkedin"></a><br>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=bitcoinisforevery.one" target="_blank" class="fa fa-linkedin"></a><br>
   <a href="#" class="fa fa-instagram"></a><br>
   <a href="#" class="fa fa-reddit"></a><br>
   <a href="#" class="fa fa-github"></a>
@@ -52,7 +57,7 @@
     <li>Europe
       <ul>
         <li><a href="#blr">Belarus</a></li>
-        <li><a href="#gbr">United Kingdom</a></li>
+        <li><a href="#gbr1">United Kingdom</a></li>
       </ul>
     </li>
     <li>Latin America
@@ -73,10 +78,6 @@
     </li>
   </ul>
 </div>
-<span class="arrow pulse">
-<span class="arrow pulse">
-</span>
-</span>
 <script src="./config.js"></script>
 <script>
 var layerTypes = {
