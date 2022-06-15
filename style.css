@@ -70,15 +70,15 @@ blockquote.twitter-tweet a:focus {
 /* menu css start */
 .header {
 	position: fixed;
-  top: 10px;
-  margin-top: 1vh;
-  margin-left: 5vw;
-	width: 88.95vw;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+	width: 99%;
 	min-width: 900px;
 	height: 50px;
 	border: 10px solid transparent;
 	border-top: 10px solid #F7931A;
-	border-right: 10px solid #F7931A;
+	/* border-right: 10px solid #F7931A; */
 	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -157,9 +157,8 @@ blockquote.twitter-tweet a:focus {
 
 #footer {
     width: 100%;
-    min-height: 5vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    min-height: 50px;
+    padding: 10px;
     text-align: center;
     line-height: 25px;
     font-size: 13px;
@@ -167,12 +166,11 @@ blockquote.twitter-tweet a:focus {
     z-index: 5;
 }
 #features {
-    padding-top: 7vh;
     padding-bottom: 7vh;
 }
 
 #gbr .light {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
 
 }
 
@@ -230,6 +228,7 @@ blockquote.twitter-tweet a:focus {
   color: #444;
   background-color: #fafafa;
 }
+
 .dark {
   color: #fafafa;
   background-color: #444;
@@ -269,37 +268,41 @@ blockquote.twitter-tweet a:focus {
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
     touch-action: unset;
 }
-
-/* Start scroll down hint css*/
-.arrow {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
-  background-size: contain;
+.arrow{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.arrow:first-child {
-  bottom: 20px;
-  opacity: .3;
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #F7931A;
+    border-right: 5px solid #F7931A;
+    transform: rotate(45deg);
+    margin: -7px;
+    animation: animate 3s infinite;
 }
-
-.pulse:not(:first-child){
-  opacity: .3;
-  animation-delay: .1s;
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
 }
-.pulse {
-  opacity: 0.3;
-  animation: pulse 2s infinite;
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
 }
-
-@keyframes pulse {
-	0%  { opacity: 1;   }
-  90% { opacity: 0.3; }
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
-/*End scroll down hint css */
 .youtube {
   margin-left: 0px;
 }
