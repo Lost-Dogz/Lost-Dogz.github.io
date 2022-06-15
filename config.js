@@ -14,9 +14,9 @@ var config = {
             id: 'gbr',
             alignment: 'full',
             hidden: false,
-            title: 'Bitcoin is for every.one',
-            intro: 'How often have you heard that "Bitcoin is for criminals"? It is an often repeated phrase by politicians, regulators, central bankers and journalists who have never used bitcoin themselves, and have never gone through the process of imagining why people would use it. The reality however is that people all over the world find value in bitcoin and only a tiny fraction of that can be considered criminal. According to a recent report the criminal fraction of all cryptocurrency transactions in 2020 was just 0.34% (Chainalysis, 2021). <strong>This site highlights the other 99.66%.</strong> Scroll down to start your bitcoin journey around the world...',
-            url: '<p><br><a href="https://blog.chainalysis.com/reports/2021-crypto-crime-report-intro-ransomware-scams-darknet-markets" target="_blank">Chainalysis 2021 Crypto Crime Report</a></p>',
+            title: '₿itcoin is for every.one',
+            intro: 'How often have you heard that "bitcoin is for criminals"? It is an often repeated phrase by politicians, regulators, central bankers and journalists who have never used bitcoin themselves, and have never gone through the process of imagining why people would use it. The reality however is that people all over the world find value in bitcoin and only a tiny fraction of that can be considered criminal. According to a recent report the criminal fraction of all cryptocurrency transactions in 2020 was just 0.34% (Chainalysis, 2021). <strong>This site highlights the other 99.66%.</strong> Scroll down to start your bitcoin journey around the world...',
+            url: '<p><br><a href="https://blog.chainalysis.com/reports/2021-crypto-crime-report-intro-ransomware-scams-darknet-marketsChainalysis 2021 Crypto Crime Report</a></p>',
             location: {
                 center: [-0.12782, 51.50167],
                 zoom: 2,
@@ -87,7 +87,8 @@ var config = {
             intro: 'Bitcoin became a tool for dissidents in Belarus to get around political repression. After a controversial election in August 2020, country-wide and months long protests broke out against Alexander Lukashenko, the sitting president since 1994.',
             image: './images/belarus.jpg',
             caption: 'Photo by Maxim Shikunets',
-            story: 'Many protestors\' were fired from their jobs, their bank accounts frozen and were left without income or savings. Bitcoin turned out to be the only option for protestors to financially support each other.',
+            story: 'Many protestors\' were fired from their jobs, their bank accounts frozen and were left without income or savings. Bitcoin turned out to be the only option for protestors to receive financial support.',
+            url: '<a href="https://fortune.com/2021/02/18/bitcoin-censorship-political-repression-deplatforming-china-belarus-russia-nigeria-crypto/" target="_blank">Read more on Fortune.com</a>',
             location: {
               center: [27.53893, 53.91570],
               zoom: 14.26,
@@ -127,7 +128,7 @@ var config = {
             intro: 'The <i>Feminist Coalition</i> from Lagos (Nigeria) champions equality for women in Nigerian society with a core focus on education, financial freedom and representation in public office.',
             image: './images/feministcoalition.jpg',
             story: 'During the #EndSARS peaceful protests in Nigeria in October 2020 their bank account was shut off and they were forced to switch to bitcoin to continue operating. They were able to continue paying for medical aid, legal aid and relief for victims of repression because of donations received this way.',
-            url: '<a href="https://feministcoalition2020.com/" target="_blank">Feminist Coalition</a>',
+            url: '<a href="https://twitter.com/feminist_co" class="fa fa-twitter target="_blank"></a></br><a href="https://feministcoalition2020.com/" target="_blank">Feminist Coalition</a>',
             location: {
               center: [3.40010, 6.44970],
               zoom: 13.55,
@@ -174,7 +175,7 @@ var config = {
               bearing: -13.60
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
@@ -187,7 +188,8 @@ var config = {
             intro: 'Mario sells shaved ice on the beach of El Zonte, El Salvador. Like many shops in El Zonte, he accepts bitcoin as payment for his ice.',
             image: './images/elzonte-aaronvanw.jpg',
             caption: 'Photo by <a href="https://twitter.com/AaronvanW" target="_blank">Aaron van Wirdum</a>',
-            story: 'In July 2021 "Minutas Mario" became trending on twitter with the hashtag <a href="https://twitter.com/hashtag/iceshaverchallange" target="_blank">#iceshaverchallenge</a> and was donated bitcoin worth over $1000 spontaneously by twitter users via the Lightning Network simply by scanning the QR code from this photo. Mario invested the unexpected income in a fryer and a coolbox and now also sells fries and sodas on the beach of El Zonte.',
+            story: 'In July 2021 "Minutas Mario" became trending on twitter with the hashtag <a href="https://twitter.com/hashtag/iceshaverchallange?src=hashtag_click" target="_blank">#iceshaverchallenge</a> and was donated bitcoin worth over $1000 spontaneously by twitter users via the Lightning Network simply by scanning the QR code from this photo. Mario invested the unexpected income in a fryer and a coolbox and now also sells fries and sodas on the beach of El Zonte.',
+            url: '<a href="https://ln.bitcoinbeach.com/minutasmario" target="_blank">Try to send Mario some sats yourself!</a>',
             location: {
                 center: [-89.43839, 13.49552],
                 zoom: 15.67,
@@ -195,7 +197,7 @@ var config = {
                 bearing: 24.93
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
@@ -205,9 +207,8 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Volcano mining, El Salvador',
-            intro: 'President Nayib Bukele, who made El Salvador the first country in the world to accept Bitcoin as legal tender doesn\'t plan to stop at that and is also seriously working on using renewable geothermal energy, one of the few resources El Salvador has plenty of, to mine Bitcoin and generate extra income for the country.',
-            // image: './images/Geothermal.jpg',
-            story: '<blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">I’ve just instructed the president of <a href="https://twitter.com/LaGeoSV?ref_src=twsrc%5Etfw">@LaGeoSV</a> (our state-owned geothermal electric company), to put up a plan to offer facilities for <a href="https://twitter.com/hashtag/Bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#Bitcoin</a> mining with very cheap, 100% clean, 100% renewable, 0 emissions energy from our volcanos 🌋 <br><br>This is going to evolve fast! 🇸🇻 <img src="./images/Geothermal.jpg"></p>&mdash; Nayib Bukele 🇸🇻 (@nayibbukele) <a href="https://twitter.com/nayibbukele/status/1402680890057166858?ref_src=twsrc%5Etfw">June 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
+            intro: 'President Nayib Bukele, who made El Salvador the first country in the world to accept Bitcoin as legal tender, didn\'t stop at that and the country is now using renewable geothermal energy, one of the few resources El Salvador has plenty of, to mine Bitcoin and generate extra income.',
+            story: '<blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">I’ve just instructed the president of <a href="https://twitter.com/LaGeoSV?ref_src=twsrc%5Etfw" target="_blank">@LaGeoSV</a> (our state-owned geothermal electric company), to put up a plan to offer facilities for <a href="https://twitter.com/hashtag/Bitcoin?src=hash&amp;ref_src=twsrc%5Etfw" target="_blank">#Bitcoin</a> mining with very cheap, 100% clean, 100% renewable, 0 emissions energy from our volcanos 🌋 <br><br>This is going to evolve fast! 🇸🇻 <img src="./images/Geothermal.jpg"></p>&mdash; Nayib Bukele 🇸🇻 (@nayibbukele) <a href="https://twitter.com/nayibbukele/status/1402680890057166858?ref_src=twsrc%5Etfw" target="_blank">June 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
             location: {
                 center: [-88.50872, 13.52462],
                 zoom: 13.5,
@@ -248,7 +249,7 @@ var config = {
             intro: 'Kal Kassa is an Ethiopian businessman, currently based in the US, who is spearheading the BitcoinBirr education initiative. He uses bitcoin to pay unbanked freelancers, graphic designers and translators in Addis Ababa.',
             image: './images/eth1.jpg',
             story: 'BitcoinBirr (Birr is Amharic for money) is an open source initative to educate and share bitcoin material with populations in all economies. 2021 priorities include translating copies of various books and relevant materials on bitcoin in local Ethiopian and Eritrean languages.',
-            url: '<a href="https://twitter.com/kalkassa" target="_blank" class="fa fa-twitter"></a><br><a href="https://bitcoinbirr.org/">BitcoinBirr</a>',
+            url: '<a href="https://twitter.com/kalkassa" class="fa fa-twitter" target="_blank"></a><br><a href="https://bitcoinbirr.org/" target="_blank">BitcoinBirr</a>',
             location: {
               center: [38.75689, 8.98997],
               zoom: 13.7,
@@ -286,7 +287,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Supporting nature conservation, Virunga National Park, DRC',
-            intro: '',
+            intro: 'The last 800 wild mountain gorillas live in the forests around the volcanoes of Virunga national park, DRC. Only 3% of people in the region have access to electricity and as such most people depend on the forest for fuel, leading to deforestation. To address this issue a number of small hydropower plants have been built in development projects.',
             image: './images/cod1.png',
             caption: 'Matebe hydroelectric plant',
             story: '',
@@ -332,7 +333,7 @@ var config = {
             image: './images/victoria.png',
             caption: 'Photo by <a href="https://victoriakayak.com/" target="_blank">Victoria Kayak</a>',
             story: 'Victoria Kayak fell down the rabbit hole and is adopting a fixed bitcoin price for Tours & Rentals, representing a significant discount when compared to the CAD price. At Victoria Kayak they think bitcoin is the future and want to encourage people to learn about bitcoin and adopt it for use. This is their incentive and contribution to the Bitcoin network.',
-            url: '<a href="https://victoriakayak.com/">Victoria Kayak</a>',
+            url: '<a href="https://victoriakayak.com/" target="_blank">Victoria Kayak</a>',
             location: {
               center: [-123.37050, 48.42454],
               zoom: 15,
@@ -449,7 +450,7 @@ var config = {
         },
         {
             id: 'afg1',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'A lifeline for refugees',
             intro: '',
